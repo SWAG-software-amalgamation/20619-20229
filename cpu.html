@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+        <link rel="stylesheet" href="css/cpu.css" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        
+        <div>
+            <div class ="intro_bg">
+                <div class="honder">
+              
+                <div class="name">
+                    <a href="index.html" class="active">Home</a>
+                </div>
+
+                <dlv class="nav">
+                    <a href="cpu.html">CPU</a>
+                    <a href="intel.html">INTEL</a>
+                    <a href="amd.html">AMD</a>
+                    
+                </dlv>
+                
+            </div>
+            <div class="space2">
+
+                <hr>
+            </div>
+            <div class="no">
+                
+            </div>
+            <div class="index">
+                <p>
+                    <div class="url">
+
+                        <a href="#ex1" class="ad">💻시스템 버스</a>
+                    </div>
+                    <div class="bn">
+                        -주소 버스<br>
+                        -데이터 버스<br>
+                        -제어 버스<br>
+                    </div>
+                    <div class="an">
+                        <a href="#ex2" class="bd">🖧컴퓨터 구성 요소간 통신</a>
+                    </div>
+                    <div class="cn">
+                        🔧CPU <----> 메모리
+                    </div>
+                    <div class="en">
+                        1.적재<br>
+                        2.수송
+                    </div>
+                </p>
+                
+            </div>
+        </div>
+        
+        <div class="space">
+            
+        </div>
+        <div id = "ex1">
+            <header data-aos="zoom-int">
+                💻시스템 버스
+                <hr>
+            </header>
+        
+            <article class="ex1-1" data-aos="fade-up">
+                - 컴퓨터의 구성요소를 서로 연결하고 데이터 전달을 위한 경로<br>
+                - 주소 버스, 데이터 버스, 제어 버스로 구성
+
+            </article>
+            <img src="./image/image.png" alt="none" data-aos="zoom-in-up">
+            <article class="ex1-2" data-aos="fade-up-left">
+                🚚 주소 버스(Address Bus)<br>
+                - 메모리의 주소나 I/O Unit의 포트 번호를 전달<br>
+                - CPU와 Memory는 단방향으로 데이터 전달이 가능한 버스를 이용<br>
+                - CPU, Memory는 I/O Unit과 양방향으로 데이터 전달이 가능한 버스를 사용<br>
+            </article>
+            <article class ="ex1-3" data-aos="fade-up-right">
+                🚚 데이터 버스(Data Bus)<br>
+                - 데이터 전달<br>
+                - 각 구성요소(CPU, Memory, I/O Unit)는 양방향으로 데이터 전달이 가능한 버스를 사용<br>
+            </article>
+            <article class ="ex1-4" data-aos="fade-down">
+                🚚 제어 버스(Control Bus)<br>
+                - 제어 신호 전달<br>
+                - Read와 Write신호가 전달<br>
+                - 각 구성요소(CPU, Memory, I/O Unit)는 양방향으로 데이터 전달이 가능한 버스를 사용<br>
+            </article>
+        </div>
+       <div id="ex2">
+        <header data-aos="zoom-in">
+            🖧컴퓨터 구성 요소간 통신
+            <hr>
+        </header>
+        <img src="./image/f6b297d584bf6d070d2c772f99180137.jpg" alt="none" data-aos="zoom-in-down">
+        <article class="ex2-1" data-aos="flip-left">
+            🔧 CPU <----> 메모리<br>
+            - 적재(Load)와 저장(Store) 명령에 의해 수행
+        </article>
+        <article class="ex2-2" data-aos="fade-down-right">
+            (1) 적재(Load)<br>
+            - 주소 버스 : 메모리에서 불러올 데이터가 저장된 주소값이 전달(CPU -> Memory)<br>
+            - 신호 버스 : Memory Read 신호 전달(CPU -> Memory)<br>
+            - 데이터 버스 : 지정한 메모리에 저장된 값 전달(Memory -> CPU)<br>
+        </article>
+        <article class="ex2-3" data-aos="fade-down-left">
+            (2) 저장(Store)<br>
+            - 주소 버스 : 메모리에서 해당 데이터를 저장할 주소값 전달(CPU -> Memory)<br>
+            - 신호 버스 : Memory Write 신호 전달(CPU -> Memory)<br>
+            - 데이터 버스 : 저장할 데이터 전달(CPU -> Memory)<br>
+        </article>
+        <article class="ex2-4">
+
+        </article>
+       </div>
+    </div>
+    <div class="progress-circle">
+        <div class="gotop">
+            <a class="top-btn">top</a>
+        </div>
+    </div>  
+    
+    <script>
+        const $topBtn = document.querySelector(".top-btn");
+        const $topCtn = document.querySelector(".gotop");
+
+
+        $topBtn.onclick = () => {
+        window.scrollTo({ top: 0, behavior: "smooth"});  
+        }
+        $topCtn.onclick = () => {
+            window.scrollTo({ top: 0, behavior: "smooth"});  
+        }
+
+
+        window.onload = () => {
+            window.scrollTo({ top: document.body.scrollHeight });  
+        }
+    </script>
+    <script>
+        AOS.init({
+  duration: 1000
+});
+    </script>
+    <div class="back">
+
+    </div>
+</body>
+</html>

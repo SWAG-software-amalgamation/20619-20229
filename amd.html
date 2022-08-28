@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/amd.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class ="intro_bg">
+            <div class="header">
+                <div class="name">
+                    <a href="index.html" class="active">Home</a>
+                </div>
+                <div>
+                    <dlv class="nav">
+                        <a href="cpu.html">CPU</a>
+                        <a href="intel.html">INTEL</a>
+                        <a href="amd.html">AMD</a>
+                    </dlv>
+                </div>
+            </div>
+            
+        </div>
+        <div class = "no">
+            
+        </div>
+    </div>
+   
+    <div class="ad" data-aos="fade-up">
+     ⚡AMD의 CPU 종류
+    </div>
+    <div class="img">
+       <img src="./image/unnamed.png" alt="none" data-aos="zoom-in">
+    </div>
+    <div class="graph" data-aos="slide-up">
+        <table>
+            <thead>
+                <tr>
+                    <th>CPU</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+    
+                    <td>AMD RYZEN 9/7</td>
+                </tr>
+                <tr>
+    
+                    <td>AMD RYZEN 5</td>
+                </tr>
+                <tr>
+    
+                    <td>AMD RYZEN 3</td>
+                </tr>
+                <tr>
+    
+                    <td>AMD Athlon APU</td>
+                </tr>
+                <tr>
+    
+                    <td>RYZEN Threadripper</td>
+                </tr>
+                <tr>
+                    <td>AMD EPYC</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="bd" data-aos="fade-down">
+        📌내부 구조
+    </div>
+    <div class="img2">
+        <img src="./image/unnamed (1).png" alt="none" data-aos="zoom-in">
+    </div>
+    <div class="cd" data-aos="flip-down">
+        <article>
+            AMD의 CPU는 코어를 나누는 구조로 MCM(Multi Core Module)
+            을 사용한다.
+        </article>
+    </div>
+    <div class="img3">
+        <img src="./image/img (1).png" alt="none" data-aos="flip-left">
+        <img src="./image/img.png" alt="none" data-aos="flip-right">
+    </div>
+    <div class="tip" data-aos="slide-down">
+       
+            *CCX(CPU Complex) : AMD에서 코어 4개를 묶는것<br>
+            *CCD(Compute Core Design) : CCX 2개를 이어붙인 구조
+        
+    </div>
+    <div class="back">
+
+    </div> 
+    <div class="progress-circle">
+        <div class="gotop">
+            <a class="top-btn">top</a>
+        </div>
+    </div>
+        
+    
+    <script>
+        const $topBtn = document.querySelector(".top-btn");
+        const $topCtn = document.querySelector(".gotop");
+
+
+        $topBtn.onclick = () => {
+        window.scrollTo({ top: 0, behavior: "smooth"});  
+        }
+        $topCtn.onclick = () => {
+            window.scrollTo({ top: 0, behavior: "smooth"});  
+        }
+
+
+        window.onload = () => {
+            window.scrollTo({ top: document.body.scrollHeight });  
+        }
+    </script>
+    <script>
+        AOS.init({
+  duration: 1000
+});
+    </script>
+</body>
+</html>
